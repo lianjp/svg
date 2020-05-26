@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>svg</title>
+    <style>
+      svg {
+        border: 5px solid pink;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SVG-foo</h1>
+    <svg width="500" height="500">
+			<line x1="10" y1="10" x2="300" y2="100" stroke="blue" stroke-width="5" />
+			<rect x="30" y="40" width="100" height="200" fill="rgba(0,255,255,0.5)" stroke="rgba(255,255,0,0.3)" stroke-width="20" />
+			<circle cx="40" cy="30" r="30" fill="olive" stroke="rgba(255,0,0,0.5)" stroke-width="15" />
+			<ellipse cx="80" cy="100" rx="100" ry="200" fill="rgba(245,124,0,0.5)" />
+			<polyline points="10,10,120,20,100,300" fill="transparent" stroke="aqua" stroke-width="10" />
+		</svg>
+  </body>
+</html>
+
+<!-- 一定要闭和，可以写单标签也可以写双标签 -->
+<!-- svg使用的是xml,所以标签使用比较严格,<line />不能写成<line></line> -->
+<!-- <line />属性  x1y1 x2y2 2点确定线段位置，stroke设置线条颜色，stroke-width设置线条宽度 -->
+<!-- <rect />属性  xy确定矩形左上角位置，width，height确定范围，fill确定填充颜色，stroke设置边框颜色，stroke-width设置边框宽度 -->
+<!-- <polyline />属性 fill要设置成透明色，不然自动填充为黑色，无法看到折线 -->
